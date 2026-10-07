@@ -1,1 +1,3 @@
-# obsidian-calendar-widget-
+# obsidian-calendar-widget
+
+Syncs calendar remastered from obsidian to a custom android widget to display those events
