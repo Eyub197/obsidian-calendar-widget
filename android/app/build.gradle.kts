@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+    implementation("aws.sdk.kotlin:s3:1.6.107")
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
