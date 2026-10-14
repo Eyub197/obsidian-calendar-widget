@@ -18,18 +18,18 @@ const getUrl = await getSignedUrl(
 	s3,
 	new GetObjectCommand({
 		Bucket: "obsidian-calendar-widget",
-		Key: "README.md",
+		Key: "uniModay.json",
 	}),
 );
 
+console.log(getUrl);
 // await s3.send(
 // 	new PutObjectCommand({
 // 		Bucket: "obsidian-calendar-widget",
-// 		Key: "README.md ",
+// 		Key: "uniModay.json",
 // 		Body: "test",
 // 	}),
 // );
-//
 
 async function getOneEvent() {
 	const path = "/home/eyub/Documents/Obsidian Vault/templates/calendar";
@@ -39,5 +39,3 @@ async function getOneEvent() {
 	const jsonString = JSON.stringify(yaml);
 	await Bun.write("uniModay.json", jsonString);
 }
-
-getOneEvent();
